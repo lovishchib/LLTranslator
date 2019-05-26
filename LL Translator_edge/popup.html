@@ -1,0 +1,26 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="popup.css"/>
+</head>
+<body><h2>L&L Translator !</h3>
+    <h4>Language Detected</h4>
+    <div id="detect-lang"></div><br>
+
+<!-- block one begins, to act as a first page of extension popup interface -->
+<div id="blockOne">
+<fieldset>
+    <legend>To be translated into</legend>
+<select id = "trans-lang"></select>    
+</fieldset>
+    <input type="button" value="Translate" id="translate" class="button"/>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" value="Reset" id="original" class="button"/>
+</div>
+<!-- block two begins, to act as next page, currently hidden, will be activated by click event in block one -->
+<div id="blockTwo"><br>
+    Translated to <span id="src-targ"></span> &nbsp;<br><br>
+    <input type="button" value="Back" id="revert" class="button"/>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" value="close" id="close" class="button"/>
+    </div>
+<script src="popup.js"></script>
+</body>
+</html>

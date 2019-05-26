@@ -1,0 +1,21 @@
+{	
+    "author": "Lovish Chib",
+	"name" : "L&L Translate",
+	"version": "1.0.1",
+	"description": "Translate a webpage from it's default or any translated language currently it is, to the selected languages like English, German, Hindi, French and Arabic",
+	"permissions": ["activeTab", "tabs"],
+	"browser_action": {
+        "default_icon": "images/16icon.png",
+		"default_popup": "popup.html"
+	},
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js" : ["contentScript.js"],
+        "css" : ["content.css"]
+    }],
+    "icons": { "16": "images/16icon.png",
+              "32": "images/32icon.png",
+           "48": "images/48icon.png",
+          "128": "images/128icon.png" },
+    "manifest_version": 2
+}
